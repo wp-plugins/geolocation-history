@@ -1,0 +1,37 @@
+/******* GLOBALS ******/
+#location-history a.action {
+	cursor: pointer;
+}
+/*********************/
+
+/******* TABLE *******/
+#location-history table tr.edit-row.hidden {
+	display: none;
+}
+/*********************/
+
+/******* FORM ********/
+#location-history .location-form {
+	margin: 20px 0;
+}
+
+#location-history .location-form label {
+	display: block;
+	float: left;
+	width: 30%;
+}
+
+#location-history .location-form input[type=text] {
+	width: 60%;
+}
+
+#location-history .location-form input[type=button],
+#location-history .location-form input[type=submit] {
+	width: 20%;
+}
+
+#location-history .gmaps-url {
+	border-left: 1px solid #555555;
+	padding-left: 20px;
+}
+
