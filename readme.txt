@@ -15,7 +15,8 @@ This plugin allows the administrator to keep track of a history of geographical 
 
 A live example can be seen on [the author's travel blog](http://yoranbrondsema.net "Yoran Brondsema's travel blog") (in Dutch).
 
-Its main features are
+Its main features are:
+
 * Add, edit and remove locations easily from the Admin panel
 * Enter geographical coordinates manually or parse from a Google Maps URL
 * Assign a date to each location for a true history of locations
@@ -24,10 +25,12 @@ Its main features are
 * Dynamically request locations with AJAX
 
 The plugin is administrated from the admin (addition and removal of geolocations) and it exposes an API to the front-end. Once the plugin is installed, a theme can call the following functions:
+
 * <code>lochis_get_location_history()</code>: returns an array containing the whole history of geolocations, sorted by ascending date.
 * <code>lochis_get_latest_location()</code>: returns only the most recent geolocation.
 
 Each of these functions also has an AJAX-equivalent that returns a JSON-object instead of a PHP object. This way you can use the geolocations in Javascript, for instance to be shown in a Google Maps widget. The AJAX functions are:
+
 * <code>lochis_ajax_get_location_history()</code>
 * <code>lochis_ajax_get_latest_location()</code>
 
